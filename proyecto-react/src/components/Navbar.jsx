@@ -1,24 +1,26 @@
-import Widgetcart from './Widgetcart';
-import './Navbar.css';
+import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function NavBar() {
 return (
     <>
-    <nav>
-        <img
-        className="img"
-        src="https://img.freepik.com/vector-premium/concepto-logotipo-boutique-ropa-empresa-marca_1012729-14322.jpg"
-        alt="logo"
-        />
-        <div>
-        <button>Remeras</button>
-        <button>Jeans</button>
-        <button>Polleras</button>
-        <button>Shorts</button>
-        </div>
-        <Widgetcart />
+    <nav
+        style={{
+        display: 'flex',
+        gap: 10,
+        justifyContent: 'center',
+        marginBottom: 30,
+        }}
+    >
+        <button>
+        <Link to={'/'}>Home</Link>
+        </button>
+        <button>
+        <Link to={'/products'}>Products</Link>
+        </button>
+        <button>
+        <Link to={'/contact'}>Contact</Link>
+        </button>
     </nav>
     </>
-    );
+);
 }
-``;

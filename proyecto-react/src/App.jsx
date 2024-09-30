@@ -1,14 +1,25 @@
 import Widgetcart from './components/Widgetcart';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomeView from './views/Homeview/HomeView';
+import ProductsView from './views/Productview/ProductView';
+import ContactView from './views/Contactview/ContactView';
+import ProductView from './views/Productsview/ProductsView';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <ItemListContainer bienvenida='Gracias por visitar nuestro e-commerce'/>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<HomeView />} />
+          <Route exact path="/products" element={<ProductsView />} />
+          <Route exact path="/contact" element={<ContactView />} />
+          <Route exact path="/product/:id" element={<ProductView />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
-
 export default App;
