@@ -1,9 +1,10 @@
-import ProductsList from '../../components/Productslist';
+import ProductList from '../../components/ProductList.jsx';
+
 export default function ProductsView() {
 return (
     <>
-    <h2>Products View</h2>
-    <ProductsList />
+    <h2>Product View</h2>
+    <ProductList />
     </>
 );
 }
