@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getProducts } from '../asyncMock.js';
 import ProductCard from './ProductCard.jsx';
+import './ProductList.css'
 
 export default function ProductList() {
 const [products, setProducts] = useState([]);
