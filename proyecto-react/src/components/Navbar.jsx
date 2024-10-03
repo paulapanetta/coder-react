@@ -13,7 +13,10 @@ return (
         <Link to={'/products'}>Products</Link>
         </button>
         <button>
-        <Link to={'/contact'}>Contact</Link>
+        <Link to={'/invierno'}>invierno</Link>
+        </button>
+        <button>
+        <Link to={'/verano'}>verano</Link>
         </button>
     </nav>
     </>

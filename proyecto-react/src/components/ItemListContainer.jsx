@@ -8,7 +8,7 @@ export default function ItemListContainer(){
     const {categoryid}= useParams;
 }
 
-useEffect(()=>{
+useParams(()=>{
     if(categoryid){
         const filteredProducts = getCategory(categoryid);
         setProducts(filteredProducts);
