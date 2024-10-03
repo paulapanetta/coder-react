@@ -11,6 +11,14 @@ useEffect(() => {
     setProduct(getProduct(id));
 }, []);
 
+// useEffect(() => {
+//     if (id) {
+//         setProducts(productsData.filter((product) => product.category === id));
+//     } else {
+//         setProducts(productsData);
+//     }
+// }, [id])
+
 return (
     <>
     <article style={{ border: '1px solid white', padding: 40 }}>
