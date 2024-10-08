@@ -13,10 +13,10 @@ return (
         <Link to={'/products'}>Products</Link>
         </button>
         <button>
-        <Link to={'/invierno'}>invierno</Link>
+        <Link to={'category/invierno'}>invierno</Link>
         </button>
         <button>
-        <Link to={'/verano'}>verano</Link>
+        <Link to={'category/verano'}>verano</Link>
         </button>
     </nav>
     </>
