@@ -1,18 +1,23 @@
 h4{
     text-align: center;
-    color: white;
+    color: black;
 }
 p{
     text-align: center;
-    color: white;
+    color: black;
 }
 html {
-    background-color:black;
-}
-img{
-    margin-left: 800px;
+    background-color:lightgray;
+    color: black;
+    text-align: center;
 }
 .details{
     margin-left: 700px;
     margin-right: 700px;
 }
+
+img{
+    height: 300px;
+}
+
+

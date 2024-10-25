@@ -6,6 +6,7 @@ const products = [
     category: 'verano',
     description: 'talles: XL, L, M, S, XS',
     image:'https://images.pricely.ar/images/1/2800005745870.jpg',
+    stock: 10,
     },
     {
     id: 2,
@@ -14,6 +15,7 @@ const products = [
     category: 'invierno',
     description: 'talles: 38, 40, 42, 44, 50, 52',
     image:'https://images.pricely.ar/images/1/2800005652109.jpg',
+    stock: 10,
     },
     {
     id: 3,
@@ -22,6 +24,7 @@ const products = [
     category: 'verano',
     description: 'Colores: rojo, azul y verde',
     image:'https://images.pricely.ar/images/14/7798162667997.jpg',
+    stock: 10,
     },
     {
     id: 4,
@@ -30,6 +33,7 @@ const products = [
     category: 'verano',
     description: 'Colores: rojo, azul y verde',
     image:'https://images.pricely.ar/images/1/2800005229899.jpg',
+    stock: 10,
     },
     {
     id: 5,
@@ -37,8 +41,8 @@ const products = [
     price: '5000',
     category: 'invierno',
     description: 'Colores: rojo, azul y verde',
-    image:
-    'https://images.pricely.ar/images/1/2800005634341.jpg',
+    image:'https://images.pricely.ar/images/1/2800005634341.jpg',
+    stock: 10,
     },
 ];
 

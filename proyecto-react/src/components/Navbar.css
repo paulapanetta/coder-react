@@ -4,5 +4,15 @@ nav{
     justify-content: space-between;
 }
 button{
-    background-attachment: fixed;
-}
+    margin-top: 0px;
+    padding: 30px 60px;
+    background-color: lightgray;
+    color: BLACK;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: gray;
+  }

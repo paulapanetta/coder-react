@@ -13,7 +13,7 @@ useEffect(() => {
 
 return (
     <>
-    <article style={{ border: '1px solid white', padding: 40 }}>
+    <article style={{ border: '1px solid black', padding: 40 }}>
         <h2>Product Detail</h2>
         <h4>
         {product.title} - {product.category}
