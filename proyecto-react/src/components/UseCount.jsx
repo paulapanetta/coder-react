@@ -1,16 +1,21 @@
-import { useState } from "react"
+import { useState } from 'react';
 
+export const UseCount = (initial = 0, min, max, agregarAlCarrito) => {
+  if (initial < min || initial > max) initial = min;
 
-export const UseCount = (initial = 0, min, max) => {
-    if(initial < min / initial > max) initial = min
+  const [count, setCount] = useState(initial);
 
-    const [count, setCount] = useState(initial)
+  const decrement = () => {
+    if (count > min) setCount((prev) => prev - 1);
+  };
 
-    const decrement = () => {
-        if(count > min) setCount(prev => prev - 1)}
+  const increment = () => {
+    if (count < max) setCount((prev) => prev + 1);
+  };
 
-    const increment = () => {
-        if(count < max) setCount(prev => prev + 1)}
+  const agregar = () => {
+    agregarAlCarrito(count); // Call function to add count to the cart
+  };
 
-    return{count, decrement, increment}
-    }
+  return { count, decrement, increment, agregar };
+};
