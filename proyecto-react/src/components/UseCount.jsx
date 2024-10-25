@@ -14,7 +14,7 @@ export const UseCount = (initial = 0, min, max, agregarAlCarrito) => {
   };
 
   const agregar = () => {
-    agregarAlCarrito(count); // Call function to add count to the cart
+    agregarAlCarrito(count); 
   };
 
   return { count, decrement, increment, agregar };
