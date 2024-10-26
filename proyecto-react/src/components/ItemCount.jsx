@@ -1,21 +1,17 @@
-import { UseCount } from "./UseCount"
+import React from 'react'
 
-const agregarAlCarrito = (cantidad) => {
-  console.log(`Adding ${cantidad} items to the cart`);
-};
+const ItemCount = ({ cantidad, handleRestar, handleSumar, handleAgregar} ) => {
 
-const Counter = () => {
-  const { count, decrement, increment, agregar} = UseCount(0, 1, 10, agregarAlCarrito);
-
-  return(
+  return (
     <div>
-      <div>{count}</div>
-      <div>
-        <button onClick={decrement}>-</button>
-        <button onClick={increment}>+</button>
-        <button onClick={agregar}>Agregar al carrito</button>
-      </div>
+        <div className="item-count">
+            <button onClick={handleRestar}>-</button>
+            <p>{cantidad}</p>
+            <button onClick={handleSumar}>+</button>
+        </div>
+        <button className="agregar-al-carrito" onClick={handleAgregar}>Agregar al carrito</button>
     </div>
   )
 }
-export default Counter
+
+export default ItemCount

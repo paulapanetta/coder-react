@@ -1,21 +1,21 @@
 import { useState } from 'react';
 
 export const UseCount = (initial = 0, min, max, agregarAlCarrito) => {
-  if (initial < min || initial > max) initial = min;
+if (initial < min || initial > max) initial = min;
 
-  const [count, setCount] = useState(initial);
+const [count, setCount] = useState(initial);
 
-  const decrement = () => {
+const decrement = () => {
     if (count > min) setCount((prev) => prev - 1);
-  };
+};
 
-  const increment = () => {
+const increment = () => {
     if (count < max) setCount((prev) => prev + 1);
-  };
+};
 
-  const agregar = () => {
+const agregar = () => {
     agregarAlCarrito(count); 
-  };
+};
 
-  return { count, decrement, increment, agregar };
+return { count, decrement, increment, agregar };
 };

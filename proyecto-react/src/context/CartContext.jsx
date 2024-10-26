@@ -6,13 +6,13 @@ const carritoInicial = JSON.parse(localStorage.getItem("carrito")) || [];
 
 export const CartProvider = ({children}) => {
     const [carrito, setCarrito] = useState(carritoInicial);
-
     const agregarAlCarrito = (item, cantidad) => {
         const itemAgregado = { ...item, cantidad };
+        console.log(`funciona`)
     
     const nuevoCarrito = [...carrito];
         const estaEnElCarrito = nuevoCarrito.find((producto) => producto.id === itemAgregado.id);
-
+        console.log(`funciona` + estaEnElCarrito);
         if (estaEnElCarrito) {
             estaEnElCarrito.cantidad += cantidad;
         } else {
